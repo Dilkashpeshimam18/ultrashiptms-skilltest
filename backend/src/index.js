@@ -37,7 +37,7 @@ await server.start();
 
 app.use(
   cors({
-    origin: ['http://localhost:3000', 'http://localhost:5173'],
+    origin: ['http://localhost:3000', 'http://localhost:5173','https://ultrashiptms-skilltest.vercel.app'],
     credentials: true,
   })
 );
@@ -67,14 +67,7 @@ app.listen(PORT, () => {
   console.log(`
   ╔════════════════════════════════════════════════╗
   ║   🚀 UltraShip TMS Server is running!         ║
-  ╠════════════════════════════════════════════════╣
-  ║   GraphQL: http://localhost:${PORT}/graphql      ║
-  ║   Health:  http://localhost:${PORT}/health       ║
-  ╠════════════════════════════════════════════════╣
-  ║   Default Login Credentials:                   ║
-  ║   Admin:    admin / admin123                   ║
-  ║   Employee: employee / employee123             ║
-  ╚════════════════════════════════════════════════╝
+  ╠════════════════════════════════════════════════
   `);
 });
 
